@@ -24,8 +24,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<LoanMaster> ApplyMortgage(LoanMaster loanMaster)
         {
-            return await _customerRepository.ApplyMortgage(loanMaster);
-            //throw new NotImplementedException();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Check the applied loan application by user
@@ -34,8 +34,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<LoanMaster> AppliedLoanStatus(string loanId)
         {
-            var result = await _customerRepository.AppliedLoanStatus(loanId);
-            return result;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Update the loan application before its sent to loan clerk
@@ -44,8 +44,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<LoanMaster> UpdateMortgage(string loanId, LoanMaster loanMaster)
         {
-            var result = await _customerRepository.UpdateMortgage(loanId, loanMaster);
-            return result;
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

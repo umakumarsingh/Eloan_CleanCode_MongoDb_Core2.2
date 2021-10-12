@@ -9039,11 +9039,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan\\E-Loan.csproj",
+      "projectUniqueName": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan\\E-Loan.csproj",
       "projectName": "E-Loan",
-      "projectPath": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan\\E-Loan.csproj",
+      "projectPath": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan\\E-Loan.csproj",
       "packagesPath": "C:\\Users\\Uma Kumar\\.nuget\\packages\\",
-      "outputPath": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan\\obj\\",
+      "outputPath": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9063,14 +9063,14 @@
         "netcoreapp2.2": {
           "targetAlias": "netcoreapp2.2",
           "projectReferences": {
-            "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan.BusinessLayer\\E-Loan.BusinessLayer.csproj": {
-              "projectPath": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan.BusinessLayer\\E-Loan.BusinessLayer.csproj"
+            "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan.BusinessLayer\\E-Loan.BusinessLayer.csproj": {
+              "projectPath": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan.BusinessLayer\\E-Loan.BusinessLayer.csproj"
             },
-            "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan.DataLayer\\E-Loan.DataLayer.csproj": {
-              "projectPath": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan.DataLayer\\E-Loan.DataLayer.csproj"
+            "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan.DataLayer\\E-Loan.DataLayer.csproj": {
+              "projectPath": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan.DataLayer\\E-Loan.DataLayer.csproj"
             },
-            "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan.Entities\\E-Loan.Entities.csproj": {
-              "projectPath": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan.Entities\\E-Loan.Entities.csproj"
+            "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan.Entities\\E-Loan.Entities.csproj": {
+              "projectPath": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan.Entities\\E-Loan.Entities.csproj"
             }
           }
         }
@@ -9110,7 +9110,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

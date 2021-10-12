@@ -5,6 +5,7 @@ using E_Loan.BusinessLayer.Services.Repository;
 using E_Loan.Entities;
 using Moq;
 using System;
+using System.IO;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
@@ -28,7 +29,6 @@ namespace E_Loan.Tests.TestCases
         private UserMaster _userMaster;
         private LoanProcesstrans _loanProcesstrans;
         private LoanApprovaltrans _loanApprovaltrans;
-        private static string type = "Exceptional";
         public ExceptionalTest(ITestOutputHelper output)
         {
             /// <summary>
@@ -88,6 +88,26 @@ namespace E_Loan.Tests.TestCases
             };
         }
         /// <summary>
+        /// Creating test output text file that store the result in boolean result
+        /// </summary>
+        static ExceptionalTest()
+        {
+            if (!File.Exists("../../../../output_exception_revised.txt"))
+                try
+                {
+                    File.Create("../../../../output_exception_revised.txt").Dispose();
+                }
+                catch (Exception)
+                {
+
+                }
+            else
+            {
+                File.Delete("../../../../output_exception_revised.txt");
+                File.Create("../../../../output_exception_revised.txt").Dispose();
+            }
+        }
+        /// <summary>
         /// Test to validate if user pass the null object while apply mortage, return null
         /// </summary>
         /// <returns></returns>
@@ -115,7 +135,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidApplyMortage=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -128,7 +148,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidApplyMortage=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -159,7 +179,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidProcessLoanTrans=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -172,7 +192,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidProcessLoanTrans=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -203,7 +223,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidSanctionedLoanTrans=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -216,7 +236,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidSanctionedLoanTrans=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -247,7 +267,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_ifInvalidLoanIdIsPassedandLoanNotFound=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -260,7 +280,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_ifInvalidLoanIdIsPassedandLoanNotFound=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -291,7 +311,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidLoanNamePassed_LoanNameMinFiveCharactor=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -304,7 +324,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidLoanNamePassed_LoanNameMinFiveCharactor=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -334,7 +354,8 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcessIdIsvalidorNot_Return=" + res + "\n");
+
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -347,7 +368,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcessIdIsvalidorNot_Return=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -377,7 +398,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcess_AcresOfLand_IsvalidorNot_Return=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -390,7 +411,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcess_AcresOfLand_IsvalidorNot_Return=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -420,7 +441,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcess_LandValueinRs_IsvalidorNot_Return=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -433,7 +454,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcess_LandValueinRs_IsvalidorNot_Return=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -463,7 +484,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcess_SuggestedAmount_IsvalidorNot_Return=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -476,7 +497,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcess_SuggestedAmount_IsvalidorNot_Return=" + res + "\n");
             return res;
         }
         /// <summary>
@@ -506,7 +527,7 @@ namespace E_Loan.Tests.TestCases
                 //final result save in text file if exception raised
                 status = Convert.ToString(res);
                 _output.WriteLine(testName + ":Failed");
-                await CallAPI.saveTestResult(testName, status, type);
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcess_ManagerId_IsvalidorNot_Return=" + res + "\n");
                 return false;
             }
             //final result save in text file, Call rest API to save test result
@@ -519,7 +540,7 @@ namespace E_Loan.Tests.TestCases
             {
                 _output.WriteLine(testName + ":Failed");
             }
-            await CallAPI.saveTestResult(testName, status, type);
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_VaidateLoanProcess_ManagerId_IsvalidorNot_Return=" + res + "\n");
             return res;
         }
     }

@@ -17,3 +17,12 @@ D:\IIHT DATA\Eloan_With_Code_MongoDb_New_Core2.2\E-Loan.Entities\obj\Debug\netco
 D:\IIHT DATA\Eloan_With_Code_MongoDb_New_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.csproj.CoreCompileInputs.cache
 D:\IIHT DATA\Eloan_With_Code_MongoDb_New_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.dll
 D:\IIHT DATA\Eloan_With_Code_MongoDb_New_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.pdb
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\bin\Debug\netcoreapp2.2\E-Loan.Entities.deps.json
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\bin\Debug\netcoreapp2.2\E-Loan.Entities.dll
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\bin\Debug\netcoreapp2.2\E-Loan.Entities.pdb
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.AssemblyInfoInputs.cache
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.AssemblyInfo.cs
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.csproj.CoreCompileInputs.cache
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.dll
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.Entities\obj\Debug\netcoreapp2.2\E-Loan.Entities.pdb

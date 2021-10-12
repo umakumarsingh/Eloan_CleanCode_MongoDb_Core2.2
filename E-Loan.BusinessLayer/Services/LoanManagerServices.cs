@@ -1,6 +1,7 @@
 ﻿using E_Loan.BusinessLayer.Interfaces;
 using E_Loan.BusinessLayer.Services.Repository;
 using E_Loan.Entities;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -24,7 +25,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<bool> AcceptLoanApplication(string loanId, string remark)
         {
-            return await _managerRepository.AcceptLoanApplication(loanId, remark);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get all Loan Application for loan Manager
@@ -32,7 +34,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<LoanMaster>> AllLoanApplication()
         {
-            return await _managerRepository.AllLoanApplication();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Check loan status before starting the loan process
@@ -41,7 +44,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<LoanMaster> CheckLoanStatus(string loanId)
         {
-            return await _managerRepository.CheckLoanStatus(loanId);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Reject loan application with remark if any details missing and not valid
@@ -51,7 +55,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<bool> RejectLoanApplication(string loanId, string remark)
         {
-            return await _managerRepository.RejectLoanApplication(loanId, remark);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// After all verifaction is done loan Sanction is start and add all other details.
@@ -61,8 +66,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<LoanApprovaltrans> SanctionedLoan(string loanId, LoanApprovaltrans loanApprovaltrans)
         {
-            var result = await _managerRepository.SanctionedLoan(loanId, loanApprovaltrans);
-            return result;
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

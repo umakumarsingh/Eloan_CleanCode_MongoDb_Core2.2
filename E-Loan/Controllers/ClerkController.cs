@@ -2,6 +2,7 @@
 using E_Loan.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -26,7 +27,8 @@ namespace E_Loan.Controllers
         [HttpGet]
         public async Task<IEnumerable<LoanMaster>> GetAllApplication()
         {
-            return await _clerkServices.AllLoanApplication();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// See the status of not recived application
@@ -36,7 +38,8 @@ namespace E_Loan.Controllers
         [Route("not-received")]
         public async Task<IEnumerable<LoanMaster>> NotRecivedLoanApplication()
         {
-            return await _clerkServices.NotReceivedLoanApplication();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Show/Get the status and list of recived loan application
@@ -46,7 +49,8 @@ namespace E_Loan.Controllers
         [Route("received")]
         public async Task<IEnumerable<LoanMaster>> RecivedLoanApplication()
         {
-            return await _clerkServices.ReceivedLoanApplication();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Start the loan process after verify, //Make sure loan status is "recived" before process loan application
@@ -59,20 +63,8 @@ namespace E_Loan.Controllers
         [Route("process-loan/{loanId}")]
         public async Task<IActionResult> ProcessLoan([FromBody] LoanProcesstrans loanProcesstrans, string loanId)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            //Make sure loan status is "recived" before process loan application
-            var loanStatus = await _clerkServices.ReceivedLoan(loanId);
-            //Process loan adding with below attribute with loan Id
-            if (loanStatus == true)
-            {
-                var result = await _clerkServices.ProcessLoan(loanProcesstrans);
-                return Ok("Your Loan in Process sent to manager, Your Loan process Id : " + result.Id);
-            }
-            return StatusCode(StatusCodes.Status500InternalServerError, new Response
-            { Status = "Error", Message = $"Loan Id with = {loanId} cannot be Processed" });
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

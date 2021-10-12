@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vtt9xKzKUHafD+oG/mmJOa2waT6i7iR3dOrfeOB4vYeXpNWDLZ6LP0hIUiL+JPzQApzpUCMVOQLJRcUhaeqErA==",
+  "dgSpecHash": "AvdeRJ3vCGaQiRezbP/gY5ysvFUF4sUdc6whIdAiLWN6tsIlCeWOz9MOq+KumT40ukGddlE+MEwjvVvmNVNgaA==",
   "success": true,
-  "projectFilePath": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan\\E-Loan.csproj",
+  "projectFilePath": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan\\E-Loan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Uma Kumar\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nXJ93tt7ye3VI7uKghjsdleZaMamORh3jz76fRfnkusrz2vgmeORCnYNyQ48HUMHzGw4iLFmgnvTtZmIki35hQ==",
+  "dgSpecHash": "CLc5cStDoh5fZbtq2n2WxoQpFlnXP+j2lOL0F4slKs+fTQ0kZp4ZTpsJiukf1OwFjM0xL8f2d3yTzaO/oItLMQ==",
   "success": true,
-  "projectFilePath": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan.Tests\\E-Loan.Tests.csproj",
+  "projectFilePath": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan.Tests\\E-Loan.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Uma Kumar\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Uma Kumar\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",

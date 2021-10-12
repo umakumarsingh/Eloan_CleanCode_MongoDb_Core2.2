@@ -2,6 +2,7 @@
 using E_Loan.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace E_Loan.Controllers
@@ -29,17 +30,8 @@ namespace E_Loan.Controllers
         [Route("loan-status/{loanId}")]
         public async Task<ActionResult<LoanMaster>> AppliedLoanStatus(string loanId)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            //Get the loan application status by loanId
-            var loanStatus = await _customerServices.AppliedLoanStatus(loanId);
-            if (loanStatus == null)
-            {
-                return NotFound();
-            }
-            return loanStatus;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Applay new loan or mortage supply all value for LoanMaster and return object as result of loanmaster object
@@ -50,12 +42,8 @@ namespace E_Loan.Controllers
         [Route("apply-mortage")]
         public async Task<ActionResult<LoanMaster>> ApplayMortage([FromBody] LoanMaster model)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            var result = await _customerServices.ApplyMortgage(model);
-            return result;
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Update loan/mortage if not recived by loan clerk then perforn actual update,
@@ -68,25 +56,8 @@ namespace E_Loan.Controllers
         [Route("update-mortage/{loanId}")]
         public async Task<ActionResult<LoanMaster>> UpdateMortage(string loanId, [FromBody] LoanMaster model)
         {
-            if (!ModelState.IsValid && loanId.Equals(""))
-            {
-                return BadRequest(ModelState);
-            }
-            var loanUpdate = await _customerServices.AppliedLoanStatus(loanId);
-            //Check if loan status is "Recived" not possible to update.
-            if (loanUpdate.LStatus == LoanStatus.Received)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, new Response
-                { Status = "Error", Message = $"Loan Application Status = {loanUpdate.LStatus} cannot be Updated" });
-            }
-            //Update loan application if it is "not recived"
-            if(loanUpdate != null && loanUpdate.LStatus == LoanStatus.NotReceived)
-            {
-                await _customerServices.UpdateMortgage(loanId, model);
-                return Ok(loanUpdate);
-            }
-            return StatusCode(StatusCodes.Status500InternalServerError, new Response
-            { Status = "Error", Message = $"Loan Id with = {loanId} cannot be Updated" });
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

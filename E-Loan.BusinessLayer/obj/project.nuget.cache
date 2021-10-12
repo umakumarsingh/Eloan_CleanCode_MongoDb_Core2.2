@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gcn+Um1j4sP8fXLx3crFaofRS+1XM15wNsqsuq3SvSgZUy/HVLZS2t3aXbzHFziq23V3dfUgmX3NVffP4MjQvg==",
+  "dgSpecHash": "09jbwa37xOK02pokmHA7hkefbvQXHWbRxmbH1JQRAqX5pYZmeLPB5Fr7ug3KG/H+8YKOZBic8NtmM9K+12p9ew==",
   "success": true,
-  "projectFilePath": "D:\\IIHT DATA\\Eloan_With_Code_MongoDb_New_Core2.2\\E-Loan.BusinessLayer\\E-Loan.BusinessLayer.csproj",
+  "projectFilePath": "D:\\IIHT DATA\\Eloan_CleanCode_MongoDb_Core2.2\\E-Loan.BusinessLayer\\E-Loan.BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Uma Kumar\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\Uma Kumar\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

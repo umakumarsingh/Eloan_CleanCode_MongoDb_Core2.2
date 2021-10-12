@@ -23,7 +23,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<LoanMaster>> AllLoanApplication()
         {
-            return await _clerkRepository.AllLoanApplication();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Show not recived loan application
@@ -31,7 +32,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<LoanMaster>> NotReceivedLoanApplication()
         {
-           return await _clerkRepository.NotReceivedLoanApplication();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Start the loan process after all status verifaction by loan clerk
@@ -41,8 +43,7 @@ namespace E_Loan.BusinessLayer.Services
         public async Task<LoanProcesstrans> ProcessLoan(LoanProcesstrans loanProcesstrans)
         {
             //Do code here
-            //throw new NotImplementedException();
-            return await _clerkRepository.ProcessLoan(loanProcesstrans);
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Check the status of recived loan application before start the loan process
@@ -52,8 +53,7 @@ namespace E_Loan.BusinessLayer.Services
         public async Task<bool> ReceivedLoan(string loanId)
         {
             //Do code here
-            return await _clerkRepository.ReceivedLoan(loanId);
-           //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Sho/get all loan application thta is in recived form
@@ -61,8 +61,8 @@ namespace E_Loan.BusinessLayer.Services
         /// <returns></returns>
         public async Task<IEnumerable<LoanMaster>> ReceivedLoanApplication()
         {
-            return await _clerkRepository.ReceivedLoanApplication();
-            //throw new NotImplementedException();
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

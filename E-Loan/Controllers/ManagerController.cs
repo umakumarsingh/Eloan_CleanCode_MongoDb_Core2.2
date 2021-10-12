@@ -3,6 +3,7 @@ using E_Loan.BusinessLayer.ViewModels;
 using E_Loan.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -39,7 +40,8 @@ namespace E_Loan.Controllers
         [Route("accept/{loanId}/{remark}")]
         public async Task<bool> AcceptLoanApplication(string loanId, string remark)
         {
-            return await _managerServices.AcceptLoanApplication(loanId, remark);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Reject loan application and add remark on that, using this end point loan status is changed to "Reject"
@@ -51,7 +53,8 @@ namespace E_Loan.Controllers
         [Route("reject/{loanId}/{remark}")]
         public async Task<bool> RejectLoanApplication(string loanId, string remark)
         {
-            return await _managerServices.RejectLoanApplication(loanId, remark);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Start the loan Sanction if all status and checked is passed.
@@ -65,26 +68,8 @@ namespace E_Loan.Controllers
         [Route("sanctioned-loan/{loanId}")]
         public async Task<ActionResult<LoanApprovaltrans>> SanctionedLoan([FromBody] LoanApprovalViewModel model, string loanId)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            //Before Sanctioned the loan for loanApplication Id - 
-            //Make sure Loan Applcation status is in "Accept" mode.
-            var loanStatus = await _managerServices.CheckLoanStatus(loanId);
-            if(loanStatus.LStatus == LoanStatus.Accept)
-            {
-                LoanApprovaltrans newApproved = new LoanApprovaltrans
-                {
-                    SanctionedAmount = model.SanctionedAmount,
-                    Termofloan = model.Termofloan,
-                    PaymentStartDate = model.PaymentStartDate
-                };
-                var result = await _managerServices.SanctionedLoan(loanId, newApproved);
-                return Ok("Your Loan is Sanctioned, Your Loan process Id : " + result.Id);
-            }
-            return StatusCode(StatusCodes.Status500InternalServerError, new Response
-            { Status = "Error", Message = $"Loan Id with = {loanId} cannot be Processed" });
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

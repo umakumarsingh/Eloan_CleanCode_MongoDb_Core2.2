@@ -24,3 +24,16 @@ D:\IIHT DATA\Eloan_With_Code_MongoDb_New_Core2.2\E-Loan.DataLayer\obj\Debug\netc
 D:\IIHT DATA\Eloan_With_Code_MongoDb_New_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.csproj.CopyComplete
 D:\IIHT DATA\Eloan_With_Code_MongoDb_New_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.dll
 D:\IIHT DATA\Eloan_With_Code_MongoDb_New_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.pdb
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\bin\Debug\netcoreapp2.2\E-Loan.DataLayer.deps.json
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\bin\Debug\netcoreapp2.2\E-Loan.DataLayer.dll
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\bin\Debug\netcoreapp2.2\E-Loan.DataLayer.pdb
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\bin\Debug\netcoreapp2.2\E-Loan.Entities.dll
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\bin\Debug\netcoreapp2.2\E-Loan.Entities.pdb
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.csproj.AssemblyReference.cache
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.AssemblyInfoInputs.cache
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.AssemblyInfo.cs
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.csproj.CoreCompileInputs.cache
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.csproj.CopyComplete
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.dll
+D:\IIHT DATA\Eloan_CleanCode_MongoDb_Core2.2\E-Loan.DataLayer\obj\Debug\netcoreapp2.2\E-Loan.DataLayer.pdb
